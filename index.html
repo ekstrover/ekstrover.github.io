@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,700' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/global.css" type="text/css"/>
+
+        <title>SALL Online</title>
+    
+    </head>
+    <body>
+     
+<body>
+<script type='text/javascript'>
+ 
+"use strict";(function(e,t){typeof define=="function"&&define.amd?define([],t):typeof exports=="object"?module.exports=t():e.store=t()})(this,function(){function o(){try{return r in t&&t[r]}catch(e){return!1}}var e={},t=window,n=t.document,r="localStorage",i="script",s;e.disabled=!1,e.version="1.3.17",e.set=function(e,t){},e.get=function(e,t){},e.has=function(t){return e.get(t)!==undefined},e.remove=function(e){},e.clear=function(){},e.transact=function(t,n,r){r==null&&(r=n,n=null),n==null&&(n={});var i=e.get(t,n);r(i),e.set(t,i)},e.getAll=function(){},e.forEach=function(){},e.serialize=function(e){return JSON.stringify(e)},e.deserialize=function(e){if(typeof e!="string")return undefined;try{return JSON.parse(e)}catch(t){return e||undefined}};if(o())s=t[r],e.set=function(t,n){return n===undefined?e.remove(t):(s.setItem(t,e.serialize(n)),n)},e.get=function(t,n){var r=e.deserialize(s.getItem(t));return r===undefined?n:r},e.remove=function(e){s.removeItem(e)},e.clear=function(){s.clear()},e.getAll=function(){var t={};return e.forEach(function(e,n){t[e]=n}),t},e.forEach=function(t){for(var n=0;n<s.length;n++){var r=s.key(n);t(r,e.get(r))}};else if(n.documentElement.addBehavior){var u,a;try{a=new ActiveXObject("htmlfile"),a.open(),a.write("<"+i+">document.w=window</"+i+'><iframe src="/favicon.ico"></iframe>'),a.close(),u=a.w.frames[0].document,s=u.createElement("div")}catch(f){s=n.createElement("div"),u=n.body}var l=function(t){return function(){var n=Array.prototype.slice.call(arguments,0);n.unshift(s),u.appendChild(s),s.addBehavior("#default#userData"),s.load(r);var i=t.apply(e,n);return u.removeChild(s),i}},c=new RegExp("[!\"#$%&'()*+,/\\\\:;<=>?@[\\]^`{|}~]","g"),h=function(e){return e.replace(/^d/,"___$&").replace(c,"___")};e.set=l(function(t,n,i){return n=h(n),i===undefined?e.remove(n):(t.setAttribute(n,e.serialize(i)),t.save(r),i)}),e.get=l(function(t,n,r){n=h(n);var i=e.deserialize(t.getAttribute(n));return i===undefined?r:i}),e.remove=l(function(e,t){t=h(t),e.removeAttribute(t),e.save(r)}),e.clear=l(function(e){var t=e.XMLDocument.documentElement.attributes;e.load(r);while(t.length)e.removeAttribute(t[0].name);e.save(r)}),e.getAll=function(t){var n={};return e.forEach(function(e,t){n[e]=t}),n},e.forEach=l(function(t,n){var r=t.XMLDocument.documentElement.attributes;for(var i=0,s;s=r[i];++i)n(s.name,e.deserialize(t.getAttribute(s.name)))})}try{var p="__storejs__";e.set(p,p),e.get(p)!=p&&(e.disabled=!0),e.remove(p)}catch(f){e.disabled=!0}return e.enabled=!e.disabled,e})
+ 
+
+function userSubmit() {
+
+var skillSelect = document.getElementsByName('skill')
+var inputNama = document.getElementById('input_nama').value
+var inputReason1 = document.getElementById('input_reason').value
+var inputReason2 = document.getElementById('input_reason_2').value
+
+store.set('userNama',inputNama);
+store.set('userReason1',inputReason1);
+store.set('userReason2',inputReason2);
+
+for (var i=0, len=skillSelect.length; i<len; i++) {
+        if ( skillSelect[i].checked ) { 
+           store.set('userSkill',skillSelect[i].value);
+           window.location.reload()
+            break; 
+        } }
+     
+}
+
+
+</script>
+
+<main id="content" class="index landing-page">
+
+<div id="landing-onboard" class="landing-page-wrapper">
+<div id="landing-course" style="display:none" class="landing-course-inner">
+<div class="course-header">
+<div class="user-info">
+<h4>Name: </h4><br><p id="nama_user"></p><br>
+<h4>Reason why I should learn English: </h4><br><p id="alasan_english"></p><br>
+<h4>Chosen Skill: </h4><br><p id="nama_skill"></p><br>
+<h4>Reason why I choose this skill:</h4><br><p id="alasan_skill"></p><br><br>
+<a href="#" onclick='store.clear();window.location.reload()'>Reset Account</a>
+</div>
+<h1 id="course_header" style='text-transform:uppercase;text-align:center;padding:0 20px 50px;'></h1></div>
+
+<div class="course-stacks" style="display:none" id="page-course-writing">
+<div class="the-course-set writing-dinda">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Dinda Anggi N.S.</div>
+<div class="inner">
+<a class="item-link material" href="/writing/din-recount-intro">Recount Text</a>
+<a class="item-link task" href="/writing/din-recount-task-1">Task 1</a>
+<a class="item-link task" href="/writing/din-recount-task-2">Task 2</a>
+<a class="item-link task" href="/writing/din-recount-task-3">Task 3</a>
+<a class="item-link material" href="/writing/din-invitation-intro">Invitation</a>
+<a class="item-link task" href="/writing/din-invitation-task-1">Task 1</a>
+<a class="item-link task" href="/writing/din-invitation-task-2">Task 2</a><br>
+<a class="item-link material">Other Resources</a>
+<a class="item-link task" href="http://learnenglishteens.britishcouncil.org/skills/writing-skills-practice" target="_blank">BritishCouncil.org &rarr; </a>
+<a class="item-link task" href="http://www.myenglishteacher.eu/blog/51-websites-that-help-you-to-improve-writing-skills-in-english/" target="_blank">MyEnglishTeacher.eu &rarr;</a><br>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div></div>
+<div class="the-course-set writing-heti">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Heti Ratnasari</div>
+<div class="inner">
+<a class="item-link material" href="/writing/het-descriptive-intro">Recount Text</a>
+<a class="item-link task" href="/writing/het-descriptive-task-1">Task 1</a>
+<a class="item-link task" href="/writing/het-descriptive-task-2">Task 2</a>
+<a class="item-link task" href="/writing/het-descriptive-task-3">Task 3</a>
+<a class="item-link task" href="/writing/het-descriptive-task-4">Task 4</a>
+<a class="item-link task" href="/writing/het-descriptive-task-5">Task 5</a><br>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+
+
+
+</div>
+
+</div>
+<div class="course-stacks" style="display:none" id="page-course-speaking">
+<div class="the-course-set">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Dian Budi</div>
+<div class="inner">
+<a class="item-link material" href="/speaking/dia-telltime-intro">Telling Time</a>
+<a class="item-link task" href="/speaking/dia-telltime-task-1">Task 1</a>
+<a class="item-link task" href="/speaking/dia-telltime-task-2">Task 2</a>
+<a class="item-link material" href="/speaking/dia-describing-intro">Describing a Thing</a>
+<a class="item-link task" href="/speaking/dia-describing-task-1">Task 1</a>
+<a class="item-link task" href="/speaking/dia-describing-task-2">Task 2</a>
+<a class="item-link material" href="/speaking/dia-complaining-intro-task">Complaining</a><br>
+<a class="item-link material">Other Resources</a>
+<a class="item-link task" href="https://www.englishclub.com/esl-worksheets/speaking/" target="_blank">EnglishClub.com &rarr;</a>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+
+</div>
+<div class="the-course-set">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Hin Farah Intidara</div>
+<div class="inner">
+<a class="item-link material" href="/speaking/fay-daily-intro-task">Daily Activities</a>
+<a class="item-link material" href="/speaking/fay-direction-intro-task">Direction</a>
+<a class="item-link material" href="/speaking/fay-family-intro-task">Family</a>
+<a class="item-link material" href="/speaking/fay-advice-intro-task">Giving Advice</a>
+<a class="item-link material" href="/speaking/fay-opinion-intro-task">Opinion</a>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+
+
+
+</div>
+</div>
+<div class="course-stacks" style="display:none" id="page-course-reading">
+<div class="the-course-set">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Mercy Fajrina</div>
+<div class="inner">
+<a class="item-link material" href="/reading/mer-descriptive-intro">Descriptive Text</a>
+<a class="item-link task" href="/reading/mer-descriptive-task-1">Task 1</a>
+<a class="item-link task" href="/reading/mer-descriptive-task-2">Task 2</a>
+<a class="item-link task" href="/reading/mer-descriptive-task-3">Task 3</a>
+<a class="item-link material" href="/reading/mer-recount-intro">Recount Text</a>
+<a class="item-link task" href="/reading/mer-recount-task-1">Task 1</a>
+<a class="item-link task" href="/reading/mer-recount-task-2">Task 2</a><br>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+</div>
+<div class="the-course-set">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Mahatma Radea K.</div>
+<div class="inner">
+<a class="item-link material" href="/reading/mah-descriptive-intro">Descriptive Text</a>
+<a class="item-link task" href="/reading/mah-descriptive-task-1">Task 1</a>
+<a class="item-link task" href="/reading/mah-descriptive-task-2">Task 2</a>
+<a class="item-link material" href="/reading/mah-recount-intro">Recount Text</a>
+<a class="item-link task" href="/reading/mah-recount-task-1">Task 1</a>
+<a class="item-link task" href="/reading/mah-recount-task-2">Task 2</a>
+<a class="item-link task" href="/reading/mah-recount-task-3">Task 3</a><br>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+</div>
+<div class="the-course-set">
+<div class='course-creator'><b>Creator / Compiler:</b><br>Bayu Aji Purbo</div>
+<div class="inner">
+<a class="item-link material" href="/reading/bay-descriptive-intro">Descriptive Text</a>
+<a class="item-link task" href="/reading/bay-descriptive-task-1">Task 1</a>
+<a class="item-link task" href="/reading/bay-descriptive-task-2">Task 2</a>
+<a class="item-link material" href="/reading/bay-recount-intro">Recount Text</a>
+<a class="item-link task" href="/reading/bay-recount-task-1">Task 1</a>
+<a class="item-link task" href="/reading/bay-recount-task-2">Task 2</a>
+<a class="item-link material" href="/reading/bay-procedure-intro-task">Procedure Text</a><br>
+<a class="item-link material" href="/writing/din-extras">Other Resources</a>
+<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<div  id="landing-new" class="landing-inner">
+<div class="kolom">
+<div class="intro">
+<div class="first-intro">
+<br><br>
+<h1>Hello,<br>Welcome to SALL</h1>
+<h2 style="font-weight:300">Improve your English Skills, by learning new skills online </h2>
+</div>
+</div>
+</div>
+<div class="kolom">
+<div class="user-onboard">
+<div class="first-user-onboard">
+<p><b>Name:</b></p><br>
+<input class="input-entry input-nama" type="text" id="input_nama"/><br><br>
+<div id="extended-input" style="display:none">
+Before you start to learn, let's define<br>your goal by joining this course.<br><br>
+<p><b>Why should i learn English?</b></p><br>
+<textarea id="input_reason" style="height: 100px;" class="input-entry input-reason-english"></textarea><br><br>
+<p><b>What skill do you want to learn?<span id="skille"></span></b></p><br>
+<input type="radio" name="skill" value="writing"> Writing
+<input type="radio" name="skill" value="speaking"> Speaking
+<input type="radio" name="skill" value="reading"> Reading
+<br><br><p><b>Why should i learn that skill?</b></p><br>
+<textarea id="input_reason_2" style="height: 100px;" class="input-entry input-reason-course"></textarea><br><br><a style="max-width:300px;" href="#" class="tombol" onclick='userSubmit()'>START LEARNING</a>
+</div>
+<a style="max-width:300px;" href="#" class="tombol" onclick='document.getElementById("extended-input").style.display = "";this.style.display = "none";'>START LEARNING</a>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</main>
+<script type="text/javascript">
+
+if(!store.get('userNama') == '') {
+
+document.getElementById('landing-new').style.display = 'none';
+
+document.getElementById('nama_user').innerHTML = store.get('userNama')
+document.getElementById('nama_skill').innerHTML = store.get('userSkill')
+document.getElementById('alasan_english').innerHTML = store.get('userReason1')
+document.getElementById('alasan_skill').innerHTML = store.get('userReason2')
+
+var courseSelected = store.get('userSkill');
+document.getElementById('landing-course').style.display = "";
+document.getElementById('course_header').innerHTML = courseSelected + " COURSE"
+document.getElementById("page-course-" + courseSelected).style.display = '';
+
+}
+
+
+</script>
+
+
+
+</body>
