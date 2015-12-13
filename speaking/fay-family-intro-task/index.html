@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300,700' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/global.css" type="text/css"/>
+
+        <title>SALL Online</title>
+    
+    </head>
+    <body>
+     
+<body>
+<main id="content" class="course-page">
+
+<article class="worksheet">
+
+    <div>
+<style type='text/css'>
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ #slides .inner { margin-left:0; }
+#slide2:checked ~ #slides .inner { margin-left:-100%; }
+#slide3:checked ~ #slides .inner { margin-left:-200%; }
+#slide4:checked ~ #slides .inner { margin-left:-300%; }
+#slide5:checked ~ #slides .inner { margin-left:-400%; }
+#slide6:checked ~ #slides .inner { margin-left:-500%; }
+#slide7:checked ~ #slides .inner { margin-left:-600%; }
+#slide8:checked ~ #slides .inner { margin-left:-700%; }
+#slide9:checked ~ #slides .inner { margin-left:-800%; }
+#slide10:checked ~ #slides .inner { margin-left:-900%; }
+#slide11:checked ~ #slides .inner { margin-left:-1000%; }
+#slide12:checked ~ #slides .inner { margin-left:-1100%; }
+#slide13:checked ~ #slides .inner { margin-left:-1200%; }
+#slide14:checked ~ #slides .inner { margin-left:-1300%; }
+#slide15:checked ~ #slides .inner { margin-left:-1400%; }
+#slide16:checked ~ #slides .inner { margin-left:-1500%; }
+#slide17:checked ~ #slides .inner { margin-left:-1600%; }
+#slide18:checked ~ #slides .inner { margin-left:-1700%; }
+#slide19:checked ~ #slides .inner { margin-left:-1800%; }
+
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+}
+
+#slides .inner {
+    width: 100%;
+    white-space: nowrap;
+    height: 480px;
+}
+
+#slides article {
+    width: 705px;
+    height: 480px;
+    display: inline-block;
+     position: relative;
+}
+
+/* Slider Styling */
+
+/* Control Setup */
+
+#controls {
+width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 230px;
+}
+
+#controls label { 
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0.3;
+}
+
+#active {
+    margin-top: -30px;
+    text-align: center;
+}
+
+#active label {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+}
+
+#active label:hover {
+    background: #ccc;
+    border-color: #777 !important;
+}
+
+#controls label:hover {
+    opacity: 0.8;
+}
+
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(5), 
+#slide5:checked ~ #controls label:nth-child(6),
+#slide6:checked ~ #controls label:nth-child(7),
+#slide7:checked ~ #controls label:nth-child(8),
+#slide8:checked ~ #controls label:nth-child(9),
+#slide9:checked ~ #controls label:nth-child(10),
+#slide10:checked ~ #controls label:nth-child(11),
+#slide11:checked ~ #controls label:nth-child(12),
+#slide12:checked ~ #controls label:nth-child(13),
+#slide13:checked ~ #controls label:nth-child(14),
+#slide14:checked ~ #controls label:nth-child(15),
+#slide15:checked ~ #controls label:nth-child(16),
+#slide16:checked ~ #controls label:nth-child(17),
+#slide17:checked ~ #controls label:nth-child(18),
+#slide18:checked ~ #controls label:nth-child(19),
+#slide19:checked ~ #controls label:nth-child(1)
+
+{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAATlJREFUeNrU2j0KAjEQBeAXsRS8x4IgeBtBsBKsLTyIhZXnEzyDS6yEZcX8zptMBlKlmY/JJFME3nvkrFkMAI4gR1JeFZABwAuAB3DqFbKZIDwbw4KsATxnCCqGWZEDgLcWht0jahg2RA2jAVHBaEHoGE0IFaMNoWFaQCiYVhBxTEuIKKY1RAxjASKCsQKpxliCVGGsQYoxFiFFGKuQbIxlSAxz6QkSw9x6giRheoF8MeM/TEpeC9iIMbC3FJtjyBXZB47WvZejFUX0AAkhrr1cvyHEuZcHMQthFZKNsAgpQliDFCMsQaoQViDVCAsQEURriBiiJUQU0QoijmgBoSC0ITSEJoSK0ILQERoQFQQbooZgQlaBLxziCHZFtvj9VENBaPTIFENDpEJc7kTrnJtjdgAebEgsPgMAhh/83AWTzxcAAAAASUVORK5CYII=) no-repeat;
+    float: right;
+    display: block;cursor:pointer;
+}
+
+
+#slide1:checked ~ #controls label:nth-child(19), 
+#slide2:checked ~ #controls label:nth-child(1), 
+#slide3:checked ~ #controls label:nth-child(2), 
+#slide4:checked ~ #controls label:nth-child(3), 
+#slide5:checked ~ #controls label:nth-child(4),
+#slide6:checked ~ #controls label:nth-child(5),
+#slide7:checked ~ #controls label:nth-child(6),
+#slide8:checked ~ #controls label:nth-child(7),
+#slide9:checked ~ #controls label:nth-child(8),
+#slide10:checked ~ #controls label:nth-child(9),
+#slide11:checked ~ #controls label:nth-child(10),
+#slide12:checked ~ #controls label:nth-child(11),
+#slide13:checked ~ #controls label:nth-child(12),
+#slide14:checked ~ #controls label:nth-child(13),
+#slide15:checked ~ #controls label:nth-child(14),
+#slide16:checked ~ #controls label:nth-child(15),
+#slide17:checked ~ #controls label:nth-child(16),
+#slide18:checked ~ #controls label:nth-child(17),
+#slide19:checked ~ #controls label:nth-child(18) {
+    background: url(data:image/png;base64,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) no-repeat;
+    float: left;
+    display: block;
+    cursor:pointer;
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5),
+#slide6:checked ~ #active label:nth-child(6),
+#slide7:checked ~ #active label:nth-child(7),
+#slide8:checked ~ #active label:nth-child(8),
+#slide9:checked ~ #active label:nth-child(9),
+#slide10:checked ~ #active label:nth-child(10),
+#slide11:checked ~ #active label:nth-child(11),
+#slide12:checked ~ #active label:nth-child(12),
+#slide13:checked ~ #active label:nth-child(13),
+#slide14:checked ~ #active label:nth-child(14),
+#slide15:checked ~ #active label:nth-child(15),
+#slide16:checked ~ #active label:nth-child(16),
+#slide17:checked ~ #active label:nth-child(17),
+#slide18:checked ~ #active label:nth-child(18),
+#slide19:checked ~ #active label:nth-child(19)
+
+ {
+    background: #333;
+    border-color: #333 !important;
+}
+
+/* Info Box */
+
+
+.info {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    height: 480px;
+    opacity: 0;
+    color: #000;
+    display: block;
+    white-space: normal;
+}
+
+
+.info h3 {
+    color: #333;
+    margin: 0 0 5px;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 44px;
+}
+
+/* Slider Styling */
+
+#slides {
+    height: 480px;
+position:relative;
+    margin: 45px 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #666;
+    padding: 1%;
+    background: #fff;
+    background: rgb(252,255,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* Animation */
+
+#slides .inner {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+
+    -webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+    -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+     -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+
+#slider {position:relative;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#controls label{
+    -webkit-transform: translateZ(0);
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+}
+
+#slide1:checked ~ #slides article:nth-child(1) .info,
+#slide2:checked ~ #slides article:nth-child(2) .info,
+#slide3:checked ~ #slides article:nth-child(3) .info,
+#slide4:checked ~ #slides article:nth-child(4) .info,
+#slide5:checked ~ #slides article:nth-child(5) .info,
+#slide6:checked ~ #slides article:nth-child(6) .info, 
+#slide7:checked ~ #slides article:nth-child(7) .info, 
+#slide8:checked ~ #slides article:nth-child(8) .info, 
+#slide9:checked ~ #slides article:nth-child(9) .info, 
+#slide10:checked ~ #slides article:nth-child(10) .info, 
+#slide11:checked ~ #slides article:nth-child(11) .info, 
+#slide12:checked ~ #slides article:nth-child(12) .info, 
+#slide13:checked ~ #slides article:nth-child(13) .info, 
+#slide14:checked ~ #slides article:nth-child(14) .info, 
+#slide15:checked ~ #slides article:nth-child(15) .info, 
+#slide16:checked ~ #slides article:nth-child(16) .info, 
+#slide17:checked ~ #slides article:nth-child(17) .info, 
+#slide18:checked ~ #slides article:nth-child(18) .info, 
+#slide19:checked ~ #slides article:nth-child(19) .info
+
+{
+    opacity: 1;
+    -webkit-transition: all 1s ease-out 0.6s;
+    -moz-transition: all 1s ease-out 0.6s;
+    -o-transition: all 1s ease-out 0.6s;
+    transition: all 1s ease-out 0.6s;
+}
+
+.info, #controls, #slides, #active, #active label, .info h3, .desktop, .tablet, .mobile {
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+</style></div>
+<header class='material-header material-speaking'>
+<ul class='material-specs'>
+<li><b>Skill:</b> Speaking</li>
+<li><b>Level:</b> Beginner</li>
+<li><b>Topic:</b> Family</li>
+<li><b>Compiled by:</b> Hin Farah Intidara</li>
+</ul>
+</header>
+<div class="material-body">
+<h1 class='text-center'>Task 3</h1>
+<br/><br/>
+<h4>Press the "right arrow" to go to next slide and "left arrow" to go to previous slide.</h4>
+<br/>
+<div id="slider">
+
+<input checked="checked" type="radio" name="slider" id="slide1">
+<input type="radio" name="slider" id="slide2">
+<input type="radio" name="slider" id="slide3">
+<input type="radio" name="slider" id="slide4">
+<input type="radio" name="slider" id="slide5">
+<input type="radio" name="slider" id="slide6">
+<input type="radio" name="slider" id="slide7">
+<input type="radio" name="slider" id="slide8">
+<input type="radio" name="slider" id="slide9">
+<input type="radio" name="slider" id="slide10">
+<input type="radio" name="slider" id="slide11">
+<input type="radio" name="slider" id="slide12">
+<input type="radio" name="slider" id="slide13">
+<input type="radio" name="slider" id="slide14">
+<input type="radio" name="slider" id="slide15">
+<input type="radio" name="slider" id="slide16">
+<input type="radio" name="slider" id="slide17">
+<input type="radio" name="slider" id="slide18">
+<input type="radio" name="slider" id="slide19">
+
+<div id="slides"><div id="overflow"><div class="inner"><article><div class="info"><h3>Hello!<br>Today, we are going to talk about...<br><br><b>Family</b></h3></div></article><article><div class="info"><h3>The Rule<br><span style="font-size: 24px">You have to answer the question orally in every slideshow.<br>After that, you may continue to the next slide.<br>Speak as good English as you can.</span></h3></div></article><article><div class="info"><h3 style="font-size: 60px">Ready to talk?</h3></div></article><article><div class="info"><h3>1<br>How many people are there in your family?<br>Who are they?</h3></div></article><article><div class="info"><h3>2<br>Do you have any brothers or sisters?<br>Talk about them</h3></div></article><article><div class="info"><h3>3<br>Who is the oldest in your family?<br>Who is the youngest?<br>Talk about them</h3></div></article><article><div class="info"><h3>4<br>How many grandparents have you got?<br>How often do you see them?</h3></div></article><article><div class="info"><h3>5<br>How many cousins do you have?<br>What do you do when you see them?</h3></div></article><article><div class="info"><h3>6<br>Pick one of your family member.<br>Describe his/her looks (=outside) and characters (=inside).</h3></div></article><article><div class="info"><h3>7<br>How do your parents earn a living? (=What are their jobs).<br>Talk about them.</h3></div></article><article><div class="info"><h3>8<br>Talk about the relative you like the most.<br>Why do you like him/her?</h3></div></article><article><div class="info"><h3>9<br>What do your parents look like?<br>Do you take after them? (=look like them)</h3></div></article><article><div class="info"><h3>10<br>Do you have any family living or working in other province?<br>Where and what do they do?</h3></div></article><article><div class="info"><h3>11<br>Are there any rules in your family?<br>What are they?<br>Do you think they are fair?</h3></div></article><article><div class="info"><h3>12<br>Does your family eat meals together?<br>What else do you do together?</h3></div></article><article><div class="info"><h3>13<br>What does your family do usually do when holiday?<br>Talk about it.</h3></div></article><article><div class="info"><h3>14<br>Do you ever hold a family reunion?<br>What happens there?</h3></div></article><article><div class="info"><h3>15<br>Is family important to you?<br>Explain why.</h3></div></article><article><div class="info"><h3>DONE<br>What a nice family!<br>Thank you for telling about your family ^^<br><br>See you later!</h3></div></article></div></div></div>
+
+<div id="controls">
+<label for="slide1"></label>
+<label for="slide2"></label>
+<label for="slide3"></label>
+<label for="slide4"></label>
+<label for="slide5"></label>
+<label for="slide6"></label>
+<label for="slide7"></label>
+<label for="slide8"></label>
+<label for="slide9"></label>
+<label for="slide10"></label>
+<label for="slide11"></label>
+<label for="slide12"></label>
+<label for="slide13"></label>
+<label for="slide14"></label>
+<label for="slide15"></label>
+<label for="slide16"></label>
+<label for="slide17"></label>
+<label for="slide18"></label>
+<label for="slide19"></label>
+</div>
+
+<div id="active">
+<label for="slide1"></label>
+<label for="slide2"></label>
+<label for="slide3"></label>
+<label for="slide4"></label>
+<label for="slide5"></label>
+<label for="slide6"></label>
+<label for="slide7"></label>
+<label for="slide8"></label>
+<label for="slide9"></label>
+<label for="slide10"></label>
+<label for="slide11"></label>
+<label for="slide12"></label>
+<label for="slide13"></label>
+<label for="slide14"></label>
+<label for="slide15"></label>
+<label for="slide16"></label>
+<label for="slide17"></label>
+<label for="slide18"></label>
+<label for="slide19"></label>
+
+</div>
+
+<p></div><br><br>
+<a href="/" class="tombol -complete">Complete This Task</a>
+</div></p>
+
+
+</article>  
+
+</main>
+</body>
