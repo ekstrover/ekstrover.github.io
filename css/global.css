@@ -161,7 +161,7 @@ position:absolute;top:0;left:0;right:50%;bottom: 0;background-color:#e46915;z-in
     height: 30px;
     border: 2px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0 10px;
     resize: none;
 }
 
