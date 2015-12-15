@@ -52,9 +52,9 @@ for (var i=0, len=skillSelect.length; i<len; i++) {
 <div class="user-info">
 <h4>Name: </h4><br><p id="nama_user"></p><br>
 <h4>Reason why I should learn English: </h4><br><p id="alasan_english"></p><br>
-<h4>Chosen Skill: </h4><br><p id="nama_skill"></p><br>
+<h4>Chosen Skill: </h4><br><p style="text-transform:capitalize" id="nama_skill"></p><br>
 <h4>Reason why I choose this skill:</h4><br><p id="alasan_skill"></p><br><br>
-<a class="rest-button" href="#" onclick='store.clear();window.location.reload()'>Reset Account</a>
+<a class="reset-button" href="#" onclick='store.clear();window.location.reload()'>Reset Account</a>
 </div>
 <h1 id="course_header" style='text-transform:uppercase;text-align:center;padding:0 20px 50px;'></h1></div>
 
@@ -161,7 +161,7 @@ for (var i=0, len=skillSelect.length; i<len; i++) {
 <a class="item-link task" href="/reading/bay-recount-task-2">Task 2</a>
 <a class="item-link material" href="/reading/bay-procedure-intro-task">Procedure Text</a><br>
 <a class="item-link material" href="/writing/din-extras">Other Resources</a>
-<a class="item-link material" href="/writing/din-extras">Download This Course as Offline PDF</a>
+<a class="item-link material" target="_blank" href="/offline/reading-course-bayu.pdf">Download This Course as Offline PDF &darr; </a>
 </div>
 
 
@@ -188,13 +188,13 @@ for (var i=0, len=skillSelect.length; i<len; i++) {
 <div id="extended-input" style="display:none">
 Before you start to learn, let's define<br>your goal by joining this course.<br><br>
 <p><b>Why should i learn English?</b></p><br>
-<textarea id="input_reason" style="height: 100px;" class="input-entry input-reason-english"></textarea><br><br>
+<textarea placeholder="Please write it in 5 sentences at least." id="input_reason" style="height: 100px;" class="input-entry input-reason-english"></textarea><br><br>
 <p><b>What skill do you want to learn?<span id="skille"></span></b></p><br>
 <input type="radio" name="skill" value="writing"> Writing
 <input type="radio" name="skill" value="speaking"> Speaking
 <input type="radio" name="skill" value="reading"> Reading
 <br><br><p><b>Why should i learn that skill?</b></p><br>
-<textarea id="input_reason_2" style="height: 100px;" class="input-entry input-reason-course"></textarea><br><br><a style="max-width:300px;" href="#" class="tombol" onclick='userSubmit()'>START LEARNING</a>
+<textarea placeholder="Please write it in 5 sentences at least." id="input_reason_2" style="height: 100px;" class="input-entry input-reason-course"></textarea><br><br><a style="max-width:300px;" href="#" class="tombol" onclick='userSubmit()'>START LEARNING</a>
 </div>
 <a style="max-width:300px;" href="#" class="tombol" onclick='document.getElementById("extended-input").style.display = "";this.style.display = "none";'>START LEARNING</a>
 
@@ -202,7 +202,9 @@ Before you start to learn, let's define<br>your goal by joining this course.<br>
 </div>
 </div>
 </div>
-
+<p style=" margin: 0 auto; padding: 20px; max-width: 500px; font-size: 12px; ">
+*If something broken, please update your browser.<br>
+This website guaranteed to work on <a style="font-weight:700" href="https://www.google.com/chrome/" target="_blank">Latest Google Chrome</a> and <a style="font-weight:700" href="https://www.mozilla.org/id/firefox/new/" target="_blank">Latest Mozilla Firefox</a></p>
 </div>
 </div>
 </main>
